@@ -20,6 +20,9 @@ public class DashboardPageElements extends CommonMethods{
 	
 	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
 	public WebElement PIM;
+	
+	@FindBy(id="menu_pim_viewEmployeeList")
+	public WebElement empListPage;
 
 	public DashboardPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);

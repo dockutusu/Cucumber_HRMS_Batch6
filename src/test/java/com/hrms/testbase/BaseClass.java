@@ -19,6 +19,7 @@ public class BaseClass {
 	public static WebDriver setUp() {
 
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "true");
+		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 
 		switch (ConfigsReader.getProperty("browser").toLowerCase()) {
 

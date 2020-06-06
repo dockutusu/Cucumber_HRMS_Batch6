@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class EmployeeSearchSteps extends CommonMethods {
-
+	
 	@Given("user navigate to employee list page")
 	public void user_navigate_to_employee_list_page() {
 		jsClick(dashboard.PIM);
@@ -33,8 +33,7 @@ public class EmployeeSearchSteps extends CommonMethods {
 
 	@When("user enters valid employee name and last name")
 	public void user_enters_valid_employee_name_and_last_name() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		
 	}
 
 }

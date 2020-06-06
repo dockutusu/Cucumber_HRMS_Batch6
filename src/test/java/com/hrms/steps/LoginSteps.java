@@ -10,11 +10,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginSteps extends CommonMethods{
-	
-	@Given("user is navigated to HRMS")
-	public void user_is_navigated_to_HRMS() {
-	  setUp();
-	}
 
 	@Given("user is logged with valid admin credentials")
 	public void user_is_logged_with_valid_admin_credentials() {
@@ -25,7 +20,8 @@ public class LoginSteps extends CommonMethods{
 
 	@When("user enter valid admin username and password")
 	public void user_enter_valid_admin_username_and_password() {
-		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
+		 sendText(login.username, ConfigsReader.getProperty("username"));
+		  sendText(login.password, ConfigsReader.getProperty("password"));
 	}
 
 	@When("user click on login button")
@@ -37,30 +33,27 @@ public class LoginSteps extends CommonMethods{
 	public void admin_user_is_successfully_logged_in() {
 		String expected = "Welcome Admin";
 		String actual = dashboard.welcome.getText();
-		Assert.assertEquals(actual, expected, "Welcome message is not displayed or not correct ");
+		Assert.assertEquals("Welcome message is not displayed or not correct ", expected, actual );
 		System.out.println(actual);
-		wait(3);
-		tearDown();
 	}
 
 	@When("user enter valid ess username and password")
 	public void user_enter_valid_ess_username_and_password() {
-		login.login("Elvira", "Syntax123");
+		 sendText(login.username, "Gince123");
+		 sendText(login.password, "SyntaxHrm123!");
 	}
 
 	@Then("ess user is successfully logged in")
 	public void ess_user_is_successfully_logged_in() {
 		String expected = "Welcome Elvira";
 		String actual = dashboard.welcome.getText();
-		Assert.assertEquals(actual, expected, "Welcome message is not displayed or not correct ");
-		System.out.println(actual);
-		wait(3);
-		tearDown();
+		Assert.assertEquals("Welcome text is NOT displayed correctly", expected, actual);
 	}
 
 	@When("User enter valid username and invalid password")
 	public void user_enter_valid_username_and_invalid_password() {
-		login.login("Admin", "Syntax123");
+		 sendText(login.username, "Elvira");
+		 sendText(login.password, "Syntax123.....");
 	}
 
 	@Then("User see Invalid Credentials text on login page")

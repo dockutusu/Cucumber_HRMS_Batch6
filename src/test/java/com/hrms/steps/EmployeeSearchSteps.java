@@ -7,28 +7,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class EmployeeSearchSteps extends CommonMethods{
-	@Given("user is navigated to HRMS")
-	public void user_is_navigated_to_HRMS() {
-	  setUp();
-	}
-
-	@Given("user is logged with valid admin credentials")
-	public void user_is_logged_with_valid_admin_credentials() {
-	  sendText(login.username, ConfigsReader.getProperty("username"));
-	  sendText(login.password, ConfigsReader.getProperty("password"));
-	  click(login.loginBtn);
-	}
+public class EmployeeSearchSteps extends CommonMethods {
 
 	@Given("user navigate to employee list page")
 	public void user_navigate_to_employee_list_page() {
-	    jsClick(dashboard.PIM);
-	    jsClick(dashboard.empListPage);
+		jsClick(dashboard.PIM);
+		jsClick(dashboard.empListPage);
 	}
 
 	@When("user enters valid employee id")
 	public void user_enters_valid_employee_id() {
-	    sendText(viewEmp.empID, "10079");
+		sendText(viewEmp.empID, "10079");
 	}
 
 	@When("click on search button")
@@ -38,9 +27,14 @@ public class EmployeeSearchSteps extends CommonMethods{
 
 	@Then("user see employee information is displayed")
 	public void user_see_employee_information_is_displayed() {
-	   System.out.println("Employee is displayed");
-	   tearDown();
+		System.out.println("Employee is displayed");
+		tearDown();
 	}
 
-	
+	@When("user enters valid employee name and last name")
+	public void user_enters_valid_employee_name_and_last_name() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
 }

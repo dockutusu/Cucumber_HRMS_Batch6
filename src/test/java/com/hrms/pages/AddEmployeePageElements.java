@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.ConfigsReader;
 
 public class AddEmployeePageElements extends CommonMethods {
 
@@ -36,4 +37,10 @@ public class AddEmployeePageElements extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
+	public void createEmpLoginCR() {
+		sendText(username, ConfigsReader.getProperty("empUserName"));
+		sendText(password, ConfigsReader.getProperty("empPassword"));
+		sendText(confirmPassword, ConfigsReader.getProperty("empPassword"));
+		click(saveBtn);
+	}
 }

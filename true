@@ -1,6 +1,6 @@
-[1591547795.947][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 5933
-[1591547795.947][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1591547795.981][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND InitSession {
+[1591555276.974][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 32794
+[1591555276.975][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1591555277.177][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -18,7 +18,7 @@
       }
    }
 }
-[1591547795.982][INFO]: Populating Preferences file: {
+[1591555277.178][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -71,7 +71,7 @@
       "enabled": false
    }
 }
-[1591547795.982][INFO]: Populating Local State file: {
+[1591555277.178][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -81,19 +81,19 @@
       }
    }
 }
-[1591547795.983][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension=/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.8DbtWn/internal --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.6cNDzG data:,
-[1591547796.906][INFO]: resolved localhost to ["127.0.0.1","::1"]
-[1591547796.931][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE InitSession {
+[1591555277.179][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension=/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.9h10qc/internal --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.sJaqSR data:,
+[1591555278.448][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1591555278.478][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
       "browserVersion": "83.0.4103.97",
       "chrome": {
          "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
-         "userDataDir": "/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.6cNDzG"
+         "userDataDir": "/var/folders/0d/263tkdf562gg6s69zmywrwhh0000gn/T/.com.google.Chrome.sJaqSR"
       },
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:55654"
+         "debuggerAddress": "localhost:53346"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -111,393 +111,619 @@
       "unhandledPromptBehavior": "dismiss and notify",
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "a0b2bafc8a6c0f02eebc69dd40d78c61"
+   "sessionId": "3076bb6e7d060587c9c8a90047224222"
 }
-[1591547796.936][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND SetTimeouts {
+[1591555278.515][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND SetTimeouts {
    "implicit": 15000
 }
-[1591547796.936][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE SetTimeouts
-[1591547796.938][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND Navigate {
+[1591555278.515][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE SetTimeouts
+[1591555278.519][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND Navigate {
    "url": "http://166.62.36.207/humanresources/symfony/web/index.php/auth/login"
 }
-[1591547796.938][INFO]: Waiting for pending navigations...
-[1591547796.939][INFO]: Done waiting for pending navigations. Status: ok
-[1591547797.428][INFO]: Waiting for pending navigations...
-[1591547799.219][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.219][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE Navigate
-[1591547799.223][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555278.520][INFO]: Waiting for pending navigations...
+[1591555278.520][INFO]: Done waiting for pending navigations. Status: ok
+[1591555278.953][INFO]: Waiting for pending navigations...
+[1591555280.285][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.285][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE Navigate
+[1591555280.311][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#txtUsername"
 }
-[1591547799.223][INFO]: Waiting for pending navigations...
-[1591547799.224][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.232][INFO]: Waiting for pending navigations...
-[1591547799.232][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.232][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "2f5cc5e5-85c8-411b-927f-8039ed3728e5"
+[1591555280.311][INFO]: Waiting for pending navigations...
+[1591555280.311][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.319][INFO]: Waiting for pending navigations...
+[1591555280.319][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.319][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f21b6e49-8571-40fc-8bb8-fcb73068d239"
 }
-[1591547799.235][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClearElement {
-   "id": "2f5cc5e5-85c8-411b-927f-8039ed3728e5"
+[1591555280.326][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "f21b6e49-8571-40fc-8bb8-fcb73068d239"
 }
-[1591547799.235][INFO]: Waiting for pending navigations...
-[1591547799.236][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.254][INFO]: 
+[1591555280.326][INFO]: Waiting for pending navigations...
+[1591555280.326][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.343][INFO]: 
 	=== NOTE: ===
 	The Clear command in ChromeDriver 2.43 and above
 	has been updated to conform to the current standard,
 	including raising blur event after clearing.
 
-[1591547799.262][INFO]: Waiting for pending navigations...
-[1591547799.263][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.263][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClearElement
-[1591547799.265][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.350][INFO]: Waiting for pending navigations...
+[1591555280.350][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.350][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555280.353][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#txtUsername"
 }
-[1591547799.265][INFO]: Waiting for pending navigations...
-[1591547799.266][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.270][INFO]: Waiting for pending navigations...
-[1591547799.270][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.270][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "2f5cc5e5-85c8-411b-927f-8039ed3728e5"
+[1591555280.353][INFO]: Waiting for pending navigations...
+[1591555280.354][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.357][INFO]: Waiting for pending navigations...
+[1591555280.357][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.357][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f21b6e49-8571-40fc-8bb8-fcb73068d239"
 }
-[1591547799.273][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND TypeElement {
-   "id": "2f5cc5e5-85c8-411b-927f-8039ed3728e5",
+[1591555280.363][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "f21b6e49-8571-40fc-8bb8-fcb73068d239",
    "text": "Admin",
    "value": [ "A", "d", "m", "i", "n" ]
 }
-[1591547799.273][INFO]: Waiting for pending navigations...
-[1591547799.274][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.379][INFO]: Waiting for pending navigations...
-[1591547799.379][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.379][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE TypeElement
-[1591547799.382][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.363][INFO]: Waiting for pending navigations...
+[1591555280.363][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.460][INFO]: Waiting for pending navigations...
+[1591555280.460][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.460][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555280.463][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "*[name='txtPassword']"
 }
-[1591547799.382][INFO]: Waiting for pending navigations...
-[1591547799.383][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.390][INFO]: Waiting for pending navigations...
-[1591547799.390][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.390][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "25cdd7e6-4f5d-4367-a4cb-e6844f24e4b0"
+[1591555280.463][INFO]: Waiting for pending navigations...
+[1591555280.463][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.470][INFO]: Waiting for pending navigations...
+[1591555280.471][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.471][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "d9ba138b-4bce-4c76-bc07-b6406f86ba0c"
 }
-[1591547799.393][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClearElement {
-   "id": "25cdd7e6-4f5d-4367-a4cb-e6844f24e4b0"
+[1591555280.474][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "d9ba138b-4bce-4c76-bc07-b6406f86ba0c"
 }
-[1591547799.393][INFO]: Waiting for pending navigations...
-[1591547799.395][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.419][INFO]: Waiting for pending navigations...
-[1591547799.420][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.420][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClearElement
-[1591547799.423][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.474][INFO]: Waiting for pending navigations...
+[1591555280.475][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.499][INFO]: Waiting for pending navigations...
+[1591555280.500][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.500][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555280.503][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "*[name='txtPassword']"
 }
-[1591547799.423][INFO]: Waiting for pending navigations...
-[1591547799.423][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.426][INFO]: Waiting for pending navigations...
-[1591547799.427][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.427][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "25cdd7e6-4f5d-4367-a4cb-e6844f24e4b0"
+[1591555280.503][INFO]: Waiting for pending navigations...
+[1591555280.503][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.506][INFO]: Waiting for pending navigations...
+[1591555280.507][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.507][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "d9ba138b-4bce-4c76-bc07-b6406f86ba0c"
 }
-[1591547799.429][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND TypeElement {
-   "id": "25cdd7e6-4f5d-4367-a4cb-e6844f24e4b0",
+[1591555280.510][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "d9ba138b-4bce-4c76-bc07-b6406f86ba0c",
    "text": "Hum@nhrm123",
    "value": [ "H", "u", "m", "@", "n", "h", "r", "m", "1", "2", "3" ]
 }
-[1591547799.429][INFO]: Waiting for pending navigations...
-[1591547799.430][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.475][INFO]: Waiting for pending navigations...
-[1591547799.476][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.476][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE TypeElement
-[1591547799.478][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.510][INFO]: Waiting for pending navigations...
+[1591555280.511][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.553][INFO]: Waiting for pending navigations...
+[1591555280.553][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.553][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555280.565][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "input#btnLogin"
 }
-[1591547799.478][INFO]: Waiting for pending navigations...
-[1591547799.486][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.492][INFO]: Waiting for pending navigations...
-[1591547799.493][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.493][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+[1591555280.565][INFO]: Waiting for pending navigations...
+[1591555280.570][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.576][INFO]: Waiting for pending navigations...
+[1591555280.577][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.577][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
 }
-[1591547799.499][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ExecuteScript {
+[1591555280.593][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
    "args": [ {
-      "element-6066-11e4-a52e-4f735466cecf": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+      "element-6066-11e4-a52e-4f735466cecf": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
    } ],
    "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
 }
-[1591547799.499][INFO]: Waiting for pending navigations...
-[1591547799.499][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.508][INFO]: Waiting for pending navigations...
-[1591547799.508][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.508][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ExecuteScript true
-[1591547799.511][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.593][INFO]: Waiting for pending navigations...
+[1591555280.594][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.602][INFO]: Waiting for pending navigations...
+[1591555280.603][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.603][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript true
+[1591555280.606][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "input#btnLogin"
 }
-[1591547799.511][INFO]: Waiting for pending navigations...
-[1591547799.512][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.515][INFO]: Waiting for pending navigations...
-[1591547799.515][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.515][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+[1591555280.606][INFO]: Waiting for pending navigations...
+[1591555280.606][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.609][INFO]: Waiting for pending navigations...
+[1591555280.610][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.610][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
 }
-[1591547799.516][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND IsElementEnabled {
-   "id": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+[1591555280.611][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND IsElementEnabled {
+   "id": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
 }
-[1591547799.516][INFO]: Waiting for pending navigations...
-[1591547799.516][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.521][INFO]: Waiting for pending navigations...
-[1591547799.521][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.521][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE IsElementEnabled true
-[1591547799.524][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.611][INFO]: Waiting for pending navigations...
+[1591555280.611][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.617][INFO]: Waiting for pending navigations...
+[1591555280.617][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.617][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE IsElementEnabled true
+[1591555280.620][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "input#btnLogin"
 }
-[1591547799.524][INFO]: Waiting for pending navigations...
-[1591547799.525][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.528][INFO]: Waiting for pending navigations...
-[1591547799.529][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.529][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+[1591555280.620][INFO]: Waiting for pending navigations...
+[1591555280.620][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.623][INFO]: Waiting for pending navigations...
+[1591555280.623][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.623][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
 }
-[1591547799.531][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClickElement {
-   "id": "cecdded7-3a10-47f7-8a26-3d05062dd15a"
+[1591555280.627][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClickElement {
+   "id": "937620c7-f74a-48fb-bac1-c47c80aa0ec9"
 }
-[1591547799.531][INFO]: Waiting for pending navigations...
-[1591547799.532][INFO]: Done waiting for pending navigations. Status: ok
-[1591547799.560][INFO]: Waiting for pending navigations...
-[1591547803.357][INFO]: Done waiting for pending navigations. Status: ok
-[1591547803.357][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClickElement
-[1591547803.360][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555280.627][INFO]: Waiting for pending navigations...
+[1591555280.627][INFO]: Done waiting for pending navigations. Status: ok
+[1591555280.657][INFO]: Waiting for pending navigations...
+[1591555282.716][INFO]: Done waiting for pending navigations. Status: ok
+[1591555282.716][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClickElement
+[1591555282.720][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "xpath",
    "value": "//a[@id='menu_pim_viewPimModule']"
 }
-[1591547803.360][INFO]: Waiting for pending navigations...
-[1591547803.360][INFO]: Done waiting for pending navigations. Status: ok
-[1591547803.368][INFO]: Waiting for pending navigations...
-[1591547803.369][INFO]: Done waiting for pending navigations. Status: ok
-[1591547803.369][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "024dbc1a-8282-469d-8ab1-f95c33112e5b"
+[1591555282.720][INFO]: Waiting for pending navigations...
+[1591555282.720][INFO]: Done waiting for pending navigations. Status: ok
+[1591555282.728][INFO]: Waiting for pending navigations...
+[1591555282.730][INFO]: Done waiting for pending navigations. Status: ok
+[1591555282.730][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "2f53d0cb-d57f-4dd5-8e7d-f900aa37ddd6"
 }
-[1591547803.371][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ExecuteScript {
+[1591555282.734][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
    "args": [ {
-      "ELEMENT": "024dbc1a-8282-469d-8ab1-f95c33112e5b",
-      "element-6066-11e4-a52e-4f735466cecf": "024dbc1a-8282-469d-8ab1-f95c33112e5b"
+      "ELEMENT": "2f53d0cb-d57f-4dd5-8e7d-f900aa37ddd6",
+      "element-6066-11e4-a52e-4f735466cecf": "2f53d0cb-d57f-4dd5-8e7d-f900aa37ddd6"
    } ],
    "script": "arguments[0].click();"
 }
-[1591547803.371][INFO]: Waiting for pending navigations...
-[1591547803.372][INFO]: Done waiting for pending navigations. Status: ok
-[1591547803.382][INFO]: Waiting for pending navigations...
-[1591547807.343][INFO]: Done waiting for pending navigations. Status: ok
-[1591547807.343][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ExecuteScript null
-[1591547807.345][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555282.734][INFO]: Waiting for pending navigations...
+[1591555282.735][INFO]: Done waiting for pending navigations. Status: ok
+[1591555282.744][INFO]: Waiting for pending navigations...
+[1591555284.890][INFO]: Done waiting for pending navigations. Status: ok
+[1591555284.891][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript null
+[1591555284.894][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "xpath",
    "value": "//a[@id='menu_pim_addEmployee']"
 }
-[1591547807.345][INFO]: Waiting for pending navigations...
-[1591547807.347][INFO]: Done waiting for pending navigations. Status: ok
-[1591547807.358][INFO]: Waiting for pending navigations...
-[1591547807.359][INFO]: Done waiting for pending navigations. Status: ok
-[1591547807.359][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "0fe3f952-5453-496c-9073-4b16d6df7c7f"
+[1591555284.894][INFO]: Waiting for pending navigations...
+[1591555284.894][INFO]: Done waiting for pending navigations. Status: ok
+[1591555284.908][INFO]: Waiting for pending navigations...
+[1591555284.909][INFO]: Done waiting for pending navigations. Status: ok
+[1591555284.909][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "a92a3442-7306-4985-bb45-79ddc596f659"
 }
-[1591547807.361][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ExecuteScript {
+[1591555284.913][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
    "args": [ {
-      "ELEMENT": "0fe3f952-5453-496c-9073-4b16d6df7c7f",
-      "element-6066-11e4-a52e-4f735466cecf": "0fe3f952-5453-496c-9073-4b16d6df7c7f"
+      "ELEMENT": "a92a3442-7306-4985-bb45-79ddc596f659",
+      "element-6066-11e4-a52e-4f735466cecf": "a92a3442-7306-4985-bb45-79ddc596f659"
    } ],
    "script": "arguments[0].click();"
 }
-[1591547807.361][INFO]: Waiting for pending navigations...
-[1591547807.362][INFO]: Done waiting for pending navigations. Status: ok
-[1591547807.370][INFO]: Waiting for pending navigations...
-[1591547808.332][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.332][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ExecuteScript null
-[1591547808.335][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555284.913][INFO]: Waiting for pending navigations...
+[1591555284.913][INFO]: Done waiting for pending navigations. Status: ok
+[1591555284.922][INFO]: Waiting for pending navigations...
+[1591555285.537][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.537][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript null
+[1591555285.541][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#firstName"
 }
-[1591547808.335][INFO]: Waiting for pending navigations...
-[1591547808.336][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.343][INFO]: Waiting for pending navigations...
-[1591547808.344][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.344][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "8a20ad74-79b3-439f-ba8c-9040ac8cc878"
+[1591555285.541][INFO]: Waiting for pending navigations...
+[1591555285.542][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.549][INFO]: Waiting for pending navigations...
+[1591555285.549][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.549][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "64e64815-81d9-49ad-837f-bc5bb73eb855"
 }
-[1591547808.346][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClearElement {
-   "id": "8a20ad74-79b3-439f-ba8c-9040ac8cc878"
+[1591555285.552][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "64e64815-81d9-49ad-837f-bc5bb73eb855"
 }
-[1591547808.346][INFO]: Waiting for pending navigations...
-[1591547808.347][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.370][INFO]: Waiting for pending navigations...
-[1591547808.370][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.370][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClearElement
-[1591547808.373][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.552][INFO]: Waiting for pending navigations...
+[1591555285.552][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.576][INFO]: Waiting for pending navigations...
+[1591555285.576][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.577][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555285.579][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#firstName"
 }
-[1591547808.373][INFO]: Waiting for pending navigations...
-[1591547808.373][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.376][INFO]: Waiting for pending navigations...
-[1591547808.377][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.377][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "8a20ad74-79b3-439f-ba8c-9040ac8cc878"
+[1591555285.579][INFO]: Waiting for pending navigations...
+[1591555285.580][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.584][INFO]: Waiting for pending navigations...
+[1591555285.584][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.584][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "64e64815-81d9-49ad-837f-bc5bb73eb855"
 }
-[1591547808.379][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND TypeElement {
-   "id": "8a20ad74-79b3-439f-ba8c-9040ac8cc878",
-   "text": "Yunus",
-   "value": [ "Y", "u", "n", "u", "s" ]
+[1591555285.588][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "64e64815-81d9-49ad-837f-bc5bb73eb855",
+   "text": "John",
+   "value": [ "J", "o", "h", "n" ]
 }
-[1591547808.379][INFO]: Waiting for pending navigations...
-[1591547808.380][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.451][INFO]: Waiting for pending navigations...
-[1591547808.451][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.451][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE TypeElement
-[1591547808.454][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.588][INFO]: Waiting for pending navigations...
+[1591555285.588][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.654][INFO]: Waiting for pending navigations...
+[1591555285.655][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.655][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555285.657][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "xpath",
    "value": "//input[@id='middleName']"
 }
-[1591547808.454][INFO]: Waiting for pending navigations...
-[1591547808.454][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.462][INFO]: Waiting for pending navigations...
-[1591547808.462][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.462][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "693dd3ec-f18f-400c-9de9-59b24e943ad7"
+[1591555285.658][INFO]: Waiting for pending navigations...
+[1591555285.658][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.665][INFO]: Waiting for pending navigations...
+[1591555285.666][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.666][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "8860836a-4d67-4598-840d-6ee8494fb454"
 }
-[1591547808.465][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClearElement {
-   "id": "693dd3ec-f18f-400c-9de9-59b24e943ad7"
+[1591555285.669][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "8860836a-4d67-4598-840d-6ee8494fb454"
 }
-[1591547808.465][INFO]: Waiting for pending navigations...
-[1591547808.465][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.489][INFO]: Waiting for pending navigations...
-[1591547808.490][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.490][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClearElement
-[1591547808.492][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.669][INFO]: Waiting for pending navigations...
+[1591555285.669][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.693][INFO]: Waiting for pending navigations...
+[1591555285.693][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.693][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555285.696][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "xpath",
    "value": "//input[@id='middleName']"
 }
-[1591547808.492][INFO]: Waiting for pending navigations...
-[1591547808.493][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.496][INFO]: Waiting for pending navigations...
-[1591547808.496][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.496][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "693dd3ec-f18f-400c-9de9-59b24e943ad7"
+[1591555285.696][INFO]: Waiting for pending navigations...
+[1591555285.696][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.700][INFO]: Waiting for pending navigations...
+[1591555285.700][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.700][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "8860836a-4d67-4598-840d-6ee8494fb454"
 }
-[1591547808.499][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND TypeElement {
-   "id": "693dd3ec-f18f-400c-9de9-59b24e943ad7",
-   "text": "Emre",
-   "value": [ "E", "m", "r", "e" ]
+[1591555285.703][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "8860836a-4d67-4598-840d-6ee8494fb454",
+   "text": "J",
+   "value": [ "J" ]
 }
-[1591547808.499][INFO]: Waiting for pending navigations...
-[1591547808.499][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.533][INFO]: Waiting for pending navigations...
-[1591547808.534][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.534][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE TypeElement
-[1591547808.537][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.703][INFO]: Waiting for pending navigations...
+[1591555285.703][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.731][INFO]: Waiting for pending navigations...
+[1591555285.732][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.732][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555285.735][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#lastName"
 }
-[1591547808.537][INFO]: Waiting for pending navigations...
-[1591547808.537][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.543][INFO]: Waiting for pending navigations...
-[1591547808.543][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.543][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "2a0e3a7d-ff6c-4ab0-bbe1-c7e14ec593e1"
+[1591555285.735][INFO]: Waiting for pending navigations...
+[1591555285.735][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.741][INFO]: Waiting for pending navigations...
+[1591555285.742][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.742][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0b38725a-ddb2-4afe-a62b-2cc1f55290ef"
 }
-[1591547808.546][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClearElement {
-   "id": "2a0e3a7d-ff6c-4ab0-bbe1-c7e14ec593e1"
+[1591555285.745][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "0b38725a-ddb2-4afe-a62b-2cc1f55290ef"
 }
-[1591547808.546][INFO]: Waiting for pending navigations...
-[1591547808.546][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.568][INFO]: Waiting for pending navigations...
-[1591547808.569][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.569][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClearElement
-[1591547808.571][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.745][INFO]: Waiting for pending navigations...
+[1591555285.745][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.768][INFO]: Waiting for pending navigations...
+[1591555285.769][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.769][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555285.771][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#lastName"
 }
-[1591547808.571][INFO]: Waiting for pending navigations...
-[1591547808.572][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.575][INFO]: Waiting for pending navigations...
-[1591547808.575][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.575][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "2a0e3a7d-ff6c-4ab0-bbe1-c7e14ec593e1"
+[1591555285.771][INFO]: Waiting for pending navigations...
+[1591555285.772][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.775][INFO]: Waiting for pending navigations...
+[1591555285.775][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.775][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0b38725a-ddb2-4afe-a62b-2cc1f55290ef"
 }
-[1591547808.578][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND TypeElement {
-   "id": "2a0e3a7d-ff6c-4ab0-bbe1-c7e14ec593e1",
-   "text": "Yakut",
-   "value": [ "Y", "a", "k", "u", "t" ]
+[1591555285.778][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "0b38725a-ddb2-4afe-a62b-2cc1f55290ef",
+   "text": "Doe",
+   "value": [ "D", "o", "e" ]
 }
-[1591547808.578][INFO]: Waiting for pending navigations...
-[1591547808.578][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.620][INFO]: Waiting for pending navigations...
-[1591547808.620][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.620][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE TypeElement
-[1591547808.623][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.778][INFO]: Waiting for pending navigations...
+[1591555285.779][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.813][INFO]: Waiting for pending navigations...
+[1591555285.813][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.813][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555285.816][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#btnSave"
 }
-[1591547808.623][INFO]: Waiting for pending navigations...
-[1591547808.623][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.630][INFO]: Waiting for pending navigations...
-[1591547808.630][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.630][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+[1591555285.816][INFO]: Waiting for pending navigations...
+[1591555285.816][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.822][INFO]: Waiting for pending navigations...
+[1591555285.822][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.822][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
 }
-[1591547808.636][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ExecuteScript {
+[1591555285.830][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
    "args": [ {
-      "element-6066-11e4-a52e-4f735466cecf": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+      "element-6066-11e4-a52e-4f735466cecf": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
    } ],
    "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
 }
-[1591547808.636][INFO]: Waiting for pending navigations...
-[1591547808.636][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.645][INFO]: Waiting for pending navigations...
-[1591547808.646][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.646][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ExecuteScript true
-[1591547808.648][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.830][INFO]: Waiting for pending navigations...
+[1591555285.830][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.838][INFO]: Waiting for pending navigations...
+[1591555285.841][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.841][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript true
+[1591555285.844][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#btnSave"
 }
-[1591547808.648][INFO]: Waiting for pending navigations...
-[1591547808.649][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.652][INFO]: Waiting for pending navigations...
-[1591547808.652][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.652][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+[1591555285.844][INFO]: Waiting for pending navigations...
+[1591555285.845][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.848][INFO]: Waiting for pending navigations...
+[1591555285.848][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.848][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
 }
-[1591547808.653][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND IsElementEnabled {
-   "id": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+[1591555285.850][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND IsElementEnabled {
+   "id": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
 }
-[1591547808.653][INFO]: Waiting for pending navigations...
-[1591547808.653][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.658][INFO]: Waiting for pending navigations...
-[1591547808.659][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.659][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE IsElementEnabled true
-[1591547808.661][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND FindElement {
+[1591555285.850][INFO]: Waiting for pending navigations...
+[1591555285.850][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.854][INFO]: Waiting for pending navigations...
+[1591555285.855][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.855][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE IsElementEnabled true
+[1591555285.858][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
    "using": "css selector",
    "value": "#btnSave"
 }
-[1591547808.661][INFO]: Waiting for pending navigations...
-[1591547808.662][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.665][INFO]: Waiting for pending navigations...
-[1591547808.665][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.665][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+[1591555285.858][INFO]: Waiting for pending navigations...
+[1591555285.858][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.861][INFO]: Waiting for pending navigations...
+[1591555285.861][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.861][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
 }
-[1591547808.668][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND ClickElement {
-   "id": "ee3930a5-5d20-4185-ad6d-543c9d8c63e7"
+[1591555285.864][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClickElement {
+   "id": "f4344536-faf8-43cb-b13c-dc72b85ef45a"
 }
-[1591547808.668][INFO]: Waiting for pending navigations...
-[1591547808.668][INFO]: Done waiting for pending navigations. Status: ok
-[1591547808.707][INFO]: Waiting for pending navigations...
-[1591547810.837][INFO]: Done waiting for pending navigations. Status: ok
-[1591547810.837][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE ClickElement
-[1591547812.841][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] COMMAND Quit {
+[1591555285.864][INFO]: Waiting for pending navigations...
+[1591555285.864][INFO]: Done waiting for pending navigations. Status: ok
+[1591555285.905][INFO]: Waiting for pending navigations...
+[1591555288.094][INFO]: Done waiting for pending navigations. Status: ok
+[1591555288.094][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClickElement
+[1591555288.097][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@id='menu_pim_addEmployee']"
+}
+[1591555288.097][INFO]: Waiting for pending navigations...
+[1591555288.097][INFO]: Done waiting for pending navigations. Status: ok
+[1591555288.102][INFO]: Waiting for pending navigations...
+[1591555288.102][INFO]: Done waiting for pending navigations. Status: ok
+[1591555288.102][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "ab56391b-3f6c-4fb2-84ab-cd9ce9562501"
+}
+[1591555288.105][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "ab56391b-3f6c-4fb2-84ab-cd9ce9562501",
+      "element-6066-11e4-a52e-4f735466cecf": "ab56391b-3f6c-4fb2-84ab-cd9ce9562501"
+   } ],
+   "script": "arguments[0].click();"
+}
+[1591555288.105][INFO]: Waiting for pending navigations...
+[1591555288.106][INFO]: Done waiting for pending navigations. Status: ok
+[1591555288.114][INFO]: Waiting for pending navigations...
+[1591555288.825][INFO]: Done waiting for pending navigations. Status: ok
+[1591555288.825][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript null
+[1591555293.829][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#firstName"
+}
+[1591555293.829][INFO]: Waiting for pending navigations...
+[1591555293.830][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.837][INFO]: Waiting for pending navigations...
+[1591555293.837][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.837][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "7aed41b3-2c82-4b1a-bd88-b918b07d7720"
+}
+[1591555293.840][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "7aed41b3-2c82-4b1a-bd88-b918b07d7720"
+}
+[1591555293.840][INFO]: Waiting for pending navigations...
+[1591555293.841][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.862][INFO]: Waiting for pending navigations...
+[1591555293.862][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.862][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555293.865][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#firstName"
+}
+[1591555293.865][INFO]: Waiting for pending navigations...
+[1591555293.865][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.868][INFO]: Waiting for pending navigations...
+[1591555293.869][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.869][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "7aed41b3-2c82-4b1a-bd88-b918b07d7720"
+}
+[1591555293.871][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "7aed41b3-2c82-4b1a-bd88-b918b07d7720",
+   "text": "Jane",
+   "value": [ "J", "a", "n", "e" ]
+}
+[1591555293.871][INFO]: Waiting for pending navigations...
+[1591555293.872][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.928][INFO]: Waiting for pending navigations...
+[1591555293.929][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.929][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555293.931][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@id='middleName']"
+}
+[1591555293.932][INFO]: Waiting for pending navigations...
+[1591555293.932][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.940][INFO]: Waiting for pending navigations...
+[1591555293.940][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.940][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "1ea14e03-3760-4ba2-958a-20caa2163bf4"
+}
+[1591555293.943][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "1ea14e03-3760-4ba2-958a-20caa2163bf4"
+}
+[1591555293.943][INFO]: Waiting for pending navigations...
+[1591555293.944][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.965][INFO]: Waiting for pending navigations...
+[1591555293.966][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.966][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555293.969][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@id='middleName']"
+}
+[1591555293.969][INFO]: Waiting for pending navigations...
+[1591555293.969][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.972][INFO]: Waiting for pending navigations...
+[1591555293.973][INFO]: Done waiting for pending navigations. Status: ok
+[1591555293.973][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "1ea14e03-3760-4ba2-958a-20caa2163bf4"
+}
+[1591555293.975][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "1ea14e03-3760-4ba2-958a-20caa2163bf4",
+   "text": "J",
+   "value": [ "J" ]
+}
+[1591555293.975][INFO]: Waiting for pending navigations...
+[1591555293.976][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.003][INFO]: Waiting for pending navigations...
+[1591555294.004][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.004][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555294.006][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#lastName"
+}
+[1591555294.006][INFO]: Waiting for pending navigations...
+[1591555294.007][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.013][INFO]: Waiting for pending navigations...
+[1591555294.013][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.013][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "2fdac40c-d444-4b95-8752-a70f9549728c"
+}
+[1591555294.016][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClearElement {
+   "id": "2fdac40c-d444-4b95-8752-a70f9549728c"
+}
+[1591555294.016][INFO]: Waiting for pending navigations...
+[1591555294.017][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.040][INFO]: Waiting for pending navigations...
+[1591555294.040][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.040][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClearElement
+[1591555294.043][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#lastName"
+}
+[1591555294.043][INFO]: Waiting for pending navigations...
+[1591555294.043][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.046][INFO]: Waiting for pending navigations...
+[1591555294.047][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.047][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "2fdac40c-d444-4b95-8752-a70f9549728c"
+}
+[1591555294.050][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND TypeElement {
+   "id": "2fdac40c-d444-4b95-8752-a70f9549728c",
+   "text": "Smith",
+   "value": [ "S", "m", "i", "t", "h" ]
+}
+[1591555294.050][INFO]: Waiting for pending navigations...
+[1591555294.050][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.092][INFO]: Waiting for pending navigations...
+[1591555294.092][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.092][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE TypeElement
+[1591555294.095][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#btnSave"
+}
+[1591555294.095][INFO]: Waiting for pending navigations...
+[1591555294.096][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.102][INFO]: Waiting for pending navigations...
+[1591555294.102][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.102][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+}
+[1591555294.109][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1591555294.109][INFO]: Waiting for pending navigations...
+[1591555294.109][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.117][INFO]: Waiting for pending navigations...
+[1591555294.118][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.118][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript true
+[1591555294.121][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#btnSave"
+}
+[1591555294.121][INFO]: Waiting for pending navigations...
+[1591555294.122][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.125][INFO]: Waiting for pending navigations...
+[1591555294.125][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.125][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+}
+[1591555294.127][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND IsElementEnabled {
+   "id": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+}
+[1591555294.127][INFO]: Waiting for pending navigations...
+[1591555294.127][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.131][INFO]: Waiting for pending navigations...
+[1591555294.132][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.132][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE IsElementEnabled true
+[1591555294.134][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#btnSave"
+}
+[1591555294.134][INFO]: Waiting for pending navigations...
+[1591555294.135][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.138][INFO]: Waiting for pending navigations...
+[1591555294.138][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.138][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+}
+[1591555294.141][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ClickElement {
+   "id": "17091dc5-842d-4eea-8959-6d3eba8ed19c"
+}
+[1591555294.141][INFO]: Waiting for pending navigations...
+[1591555294.141][INFO]: Done waiting for pending navigations. Status: ok
+[1591555294.185][INFO]: Waiting for pending navigations...
+[1591555295.421][INFO]: Done waiting for pending navigations. Status: ok
+[1591555295.421][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ClickElement
+[1591555295.424][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@id='menu_pim_addEmployee']"
+}
+[1591555295.424][INFO]: Waiting for pending navigations...
+[1591555295.425][INFO]: Done waiting for pending navigations. Status: ok
+[1591555295.432][INFO]: Waiting for pending navigations...
+[1591555295.433][INFO]: Done waiting for pending navigations. Status: ok
+[1591555295.433][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "db8a06e7-1b62-45ab-ae2b-003d2dafecdf"
+}
+[1591555295.436][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "db8a06e7-1b62-45ab-ae2b-003d2dafecdf",
+      "element-6066-11e4-a52e-4f735466cecf": "db8a06e7-1b62-45ab-ae2b-003d2dafecdf"
+   } ],
+   "script": "arguments[0].click();"
+}
+[1591555295.436][INFO]: Waiting for pending navigations...
+[1591555295.436][INFO]: Done waiting for pending navigations. Status: ok
+[1591555295.445][INFO]: Waiting for pending navigations...
+[1591555296.232][INFO]: Done waiting for pending navigations. Status: ok
+[1591555296.232][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE ExecuteScript null
+[1591555301.239][INFO]: [3076bb6e7d060587c9c8a90047224222] COMMAND Quit {
 
 }
-[1591547812.891][INFO]: [a0b2bafc8a6c0f02eebc69dd40d78c61] RESPONSE Quit
+[1591555301.289][INFO]: [3076bb6e7d060587c9c8a90047224222] RESPONSE Quit

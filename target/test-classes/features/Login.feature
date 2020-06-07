@@ -1,5 +1,6 @@
 Feature: Login
 
+  #previously written test
   @smoke
   Scenario: valid admin login
     When user enter valid admin username and password
@@ -12,6 +13,8 @@ Feature: Login
     And user click on login button
     Then ess user is successfully logged in
 
+  #enhancing test with Scenario Outline
+  @smoke
   Scenario Outline: 
     When user enter valid "<Username>" and "<Password>"
     And user click on login button
@@ -27,4 +30,3 @@ Feature: Login
     When User enter valid username and invalid password
     And user click on login button
     Then User see Invalid Credentials text on login page
-    #BREAK TILL 1:45

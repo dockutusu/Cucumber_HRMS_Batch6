@@ -1,7 +1,7 @@
 Feature: Login
 
   #previously written test
-  @smoke
+  @maven
   Scenario: valid admin login
     When user enter valid admin username and password
     And user click on login button

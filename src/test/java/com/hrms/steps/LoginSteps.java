@@ -65,6 +65,16 @@ public class LoginSteps extends CommonMethods{
 	    
 	}
 	
+	@When("user enter valid {string} and {string}")
+	public void user_enter_valid_and(String string, String string2) {
+	  
+	}
+
+	@Then("{string} is successfully logged in")
+	public void is_successfully_logged_in(String string) {
+	   
+	}
+	
 	@When("I enter invalid username and password and see error message")
 	public void i_enter_invalid_username_and_password_and_see_error_message(DataTable inavalidCredentials) {
 		List<Map<String, String>> list = inavalidCredentials.asMaps();

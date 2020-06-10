@@ -6,6 +6,8 @@ import java.util.Map;
 import org.junit.Assert;
 
 import com.hrms.utils.CommonMethods;
+import com.hrms.utils.Constants;
+import com.hrms.utils.ExcelUtility;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -109,5 +111,13 @@ public class AddEmployeeSteps extends CommonMethods {
 	@Then("employee is added")
 	public void employee_is_added() {
 		System.out.println("-----Employee is added using datatable");
+	}
+	
+	
+	@When("user enters employee data from {string} excel sheet then employee is added")
+	public void user_enters_employee_data_from_excel_sheet_then_employee_is_added(String sheetName) {
+	   List<Map<String, String>> excelList=ExcelUtility.excelIntoListOfMaps(Constants.TESTDATA_FILEPATH, sheetName);
+	   //HW
+	
 	}
 }

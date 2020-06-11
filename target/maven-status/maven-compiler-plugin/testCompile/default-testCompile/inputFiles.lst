@@ -1,3 +1,4 @@
+/Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/runners/SmokeRunner.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/utils/ExcelUtility.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/pages/PersonalDetailsPageElements.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/steps/LoginSteps.java
@@ -6,8 +7,8 @@
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/pages/ViewEmployeePageElements.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/steps/Hooks.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/pages/DashboardPageElements.java
+/Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/runners/RegressionRunner.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/utils/CommonMethods.java
-/Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/runners/TestRunner.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/utils/ConfigsReader.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/testbase/PageInitializer.java
 /Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/java/com/hrms/testbase/BaseClass.java

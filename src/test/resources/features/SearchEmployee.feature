@@ -7,12 +7,12 @@ Feature: Employee Search
 
   @smoke
   Scenario: Search employee by id
-    When user enters valid employee id
+    When user enters valid employee id "10079"
     And click on search button
     Then user see employee information is displayed
 
   @regression
   Scenario: Search employee by name
-    When user enters valid employee name and last name
+    When user enters valid employee "John" and "Smith"
     And click on search button
     Then user see employee information is displayed

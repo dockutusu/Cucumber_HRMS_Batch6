@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Hrms</td>
         <td>1</td>
-      <td>10 Jun 2020, 21:09</td>
+      <td>10 Jun 2020, 21:51</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@sprint5</td>
-          <td      class="passed"    >6</td>
+          <td      class="passed"    >10</td>
+          <td      class="failed"    >2</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">6</td>
+          <td class="total">12</td>
 
           <td  class="passed"    >2</td>
-          <td >0</td>
-          <td class="total">2</td>
+          <td  class="failed"    >2</td>
+          <td class="total">4</td>
 
-          <td class="duration" data-value="3418000000">3.418</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2608392000">2.608</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -181,18 +181,18 @@ $(document).ready(function() {
     <b>Tags:</b>
        <a href="report-tag_21920026.html">@sprint5</a>
        <a href="report-tag_4082898728.html">@login</a>
-       <a href="report-tag_2178622835.html">@report</a>
+       <a href="report-tag_2102201837.html">@reporting</a>
 </div>
 
 
-  <span class="lead-duration duration">2.631</span>
+  <span class="lead-duration duration">1.149</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">valid admin and ess login</span>
+  <span class="name">Error message validation while invalid login</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -201,7 +201,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -223,7 +223,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.hrms.steps.Hooks.start()</span>
 
-  <span class="lead-duration duration">4.705</span>
+  <span class="lead-duration duration">3.021</span>
 
           </div>
 
@@ -240,9 +240,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -252,15 +252,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user enter <span class="argument">&quot;Mahady&quot;</span> and <span class="argument">&quot;Mahady123!!&quot;</span></span>
+  <span class="name">user enter <span class="argument">&quot;Admin&quot;</span> and <span class="argument">&quot;Admin123&quot;</span></span>
 
-  <span class="lead-duration duration">0.244</span>
+  <span class="lead-duration duration">0.257</span>
 
 </div>
 
@@ -287,7 +287,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click on login button</span>
 
-  <span class="lead-duration duration">2.386</span>
+  <span class="lead-duration duration">0.866</span>
 
 </div>
 
@@ -310,11 +310,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name"><span class="argument">&quot;John&quot;</span> is successfully logged in</span>
+  <span class="name">user see <span class="argument">&quot;Invalid Credentials&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -322,6 +322,21 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.junit.ComparisonFailure:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: Not correct error message is displayed expected:&lt;Invalid [C]redentials&gt; but was:&lt;Invalid [c]redentials&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)
+	at &#10045;.user see &quot;Invalid Credentials&quot;(file:///Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/resources/features/Login.feature:20)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -341,7 +356,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -353,13 +368,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.hrms.steps.Hooks.end()</span>
+              <span class="location name">com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.088</span>
+  <span class="lead-duration duration">0.674</span>
 
           </div>
 
@@ -368,6 +383,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Error message validation while invalid login</a>
+      <a href="embeddings/embedding_728181573.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_728181573.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -388,18 +418,18 @@ $(document).ready(function() {
     <b>Tags:</b>
        <a href="report-tag_21920026.html">@sprint5</a>
        <a href="report-tag_4082898728.html">@login</a>
-       <a href="report-tag_2178622835.html">@report</a>
+       <a href="report-tag_2102201837.html">@reporting</a>
 </div>
 
 
-  <span class="lead-duration duration">0.787</span>
+  <span class="lead-duration duration">0.732</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">valid admin and ess login</span>
+  <span class="name">Error message validation while invalid login</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -408,11 +438,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -424,13 +454,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.hrms.steps.Hooks.start()</span>
 
-  <span class="lead-duration duration">2.027</span>
+  <span class="lead-duration duration">1.864</span>
 
           </div>
 
@@ -447,9 +477,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -459,15 +489,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user enter <span class="argument">&quot;abd77&quot;</span> and <span class="argument">&quot;Syntax123!&quot;</span></span>
+  <span class="name">user enter <span class="argument">&quot;Hello&quot;</span> and <span class="argument">&quot;Syntax123!&quot;</span></span>
 
-  <span class="lead-duration duration">0.261</span>
+  <span class="lead-duration duration">0.295</span>
 
 </div>
 
@@ -494,7 +524,244 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click on login button</span>
 
-  <span class="lead-duration duration">0.526</span>
+  <span class="lead-duration duration">0.412</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user see <span class="argument">&quot;Invalid Credentials&quot;</span></span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.junit.ComparisonFailure:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: Not correct error message is displayed expected:&lt;Invalid [C]redentials&gt; but was:&lt;Invalid [c]redentials&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)
+	at &#10045;.user see &quot;Invalid Credentials&quot;(file:///Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/resources/features/Login.feature:20)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.666</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Error message validation while invalid login</a>
+      <a href="embeddings/embedding_728181573.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_728181573.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1764534172.html">Login</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_21920026.html">@sprint5</a>
+       <a href="report-tag_4082898728.html">@login</a>
+       <a href="report-tag_2102201837.html">@reporting</a>
+</div>
+
+
+  <span class="lead-duration duration">0.369</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Error message validation while invalid login</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.hrms.steps.Hooks.start()</span>
+
+  <span class="lead-duration duration">1.923</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user enter <span class="argument">&quot;Admin&quot;</span> and <span class="argument">&quot;&quot;</span></span>
+
+  <span class="lead-duration duration">0.253</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click on login button</span>
+
+  <span class="lead-duration duration">0.093</span>
 
 </div>
 
@@ -519,9 +786,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name"><span class="argument">&quot;Abdullah&quot;</span> is successfully logged in</span>
+  <span class="name">user see <span class="argument">&quot;Password cannot be empty&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -548,7 +815,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -560,13 +827,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.hrms.steps.Hooks.end()</span>
+              <span class="location name">com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.635</span>
 
           </div>
 
@@ -575,6 +842,243 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+      <a>Error message validation while invalid login</a>
+      <a href="embeddings/embedding_-833887791.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-17" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-833887791.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1764534172.html">Login</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_21920026.html">@sprint5</a>
+       <a href="report-tag_4082898728.html">@login</a>
+       <a href="report-tag_2102201837.html">@reporting</a>
+</div>
+
+
+  <span class="lead-duration duration">0.356</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Error message validation while invalid login</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-19" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.hrms.steps.Hooks.start()</span>
+
+  <span class="lead-duration duration">2.382</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user enter <span class="argument">&quot;&quot;</span> and <span class="argument">&quot;Syntax123!&quot;</span></span>
+
+  <span class="lead-duration duration">0.236</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user click on login button</span>
+
+  <span class="lead-duration duration">0.097</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user see <span class="argument">&quot;Username cannot be empty&quot;</span></span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-21" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.671</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Error message validation while invalid login</a>
+      <a href="embeddings/embedding_1728903959.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1728903959.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

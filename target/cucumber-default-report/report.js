@@ -13,12 +13,12 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "valid admin and ess login",
+  "name": "Error message validation while invalid login",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@report"
+      "name": "@reporting"
     }
   ]
 });
@@ -31,7 +31,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "\"\u003cFirstName\u003e\" is successfully logged in",
+  "name": "user see \"\u003cErrorMessage\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -43,27 +43,41 @@ formatter.examples({
       "cells": [
         "Username",
         "Password",
-        "FirstName"
+        "ErrorMessage"
       ]
     },
     {
       "cells": [
-        "Mahady",
-        "Mahady123!!",
-        "John"
+        "Admin",
+        "Admin123",
+        "Invalid Credentials"
       ]
     },
     {
       "cells": [
-        "abd77",
+        "Hello",
         "Syntax123!",
-        "Abdullah"
+        "Invalid Credentials"
+      ]
+    },
+    {
+      "cells": [
+        "Admin",
+        "",
+        "Password cannot be empty"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "Syntax123!",
+        "Username cannot be empty"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "valid admin and ess login",
+  "name": "Error message validation while invalid login",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -74,7 +88,7 @@ formatter.scenario({
       "name": "@login"
     },
     {
-      "name": "@report"
+      "name": "@reporting"
     }
   ]
 });
@@ -82,7 +96,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter \"Mahady\" and \"Mahady123!!\"",
+  "name": "user enter \"Admin\" and \"Admin123\"",
   "keyword": "When "
 });
 formatter.match({
@@ -102,20 +116,22 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "\"John\" is successfully logged in",
+  "name": "user see \"Invalid Credentials\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.hrms.steps.LoginSteps.is_successfully_logged_in(java.lang.String)"
+  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: Not correct error message is displayed expected:\u003cInvalid [C]redentials\u003e but was:\u003cInvalid [c]redentials\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)\n\tat ✽.user see \"Invalid Credentials\"(file:///Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/resources/features/Login.feature:20)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "Error message validation while invalid login");
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "valid admin and ess login",
+  "name": "Error message validation while invalid login",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -126,7 +142,7 @@ formatter.scenario({
       "name": "@login"
     },
     {
-      "name": "@report"
+      "name": "@reporting"
     }
   ]
 });
@@ -134,7 +150,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter \"abd77\" and \"Syntax123!\"",
+  "name": "user enter \"Hello\" and \"Syntax123!\"",
   "keyword": "When "
 });
 formatter.match({
@@ -154,15 +170,123 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "\"Abdullah\" is successfully logged in",
+  "name": "user see \"Invalid Credentials\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.hrms.steps.LoginSteps.is_successfully_logged_in(java.lang.String)"
+  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: Not correct error message is displayed expected:\u003cInvalid [C]redentials\u003e but was:\u003cInvalid [c]redentials\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)\n\tat ✽.user see \"Invalid Credentials\"(file:///Users/syntax/eclipse-workspace/Batch6/Hrms/src/test/resources/features/Login.feature:20)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded1.png", "Error message validation while invalid login");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message validation while invalid login",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@sprint5"
+    },
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@reporting"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enter \"Admin\" and \"\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "user click on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user see \"Password cannot be empty\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded2.png", "Error message validation while invalid login");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message validation while invalid login",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@sprint5"
+    },
+    {
+      "name": "@login"
+    },
+    {
+      "name": "@reporting"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enter \"\" and \"Syntax123!\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user see \"Username cannot be empty\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded3.png", "Error message validation while invalid login");
 formatter.after({
   "status": "passed"
 });

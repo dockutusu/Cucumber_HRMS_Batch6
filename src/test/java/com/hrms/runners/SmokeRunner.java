@@ -11,15 +11,16 @@ import io.cucumber.junit.CucumberOptions;
 					//in our case we do say to run all features inside features package
 		glue="com/hrms/steps", //where we can find implementation code for gherkin steps?
 					//we specify just package
-		dryRun=false, //if set to true it will quickly scan that all gherkin steps have implementation code
+		//dryRun=true, //if set to true it will quickly scan that all gherkin steps have implementation code
 					// if set to true no actual execution will happen
 		monochrome = true
 		,strict=true
-		,tags= "@smoke"
+		,tags= "@report"
 		,plugin= {
 				"pretty",//prints gherkin steps in console
-				"html:target/cucumber-default-report"//create basic html report in specified location
-				}
+				"html:target/cucumber-default-report",//create basic html report in specified location
+				"json:target/cucumber.json"
+		}
 		)
 
 public class SmokeRunner {

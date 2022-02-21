@@ -2,6 +2,7 @@ package com.hrms.utils;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -274,6 +275,7 @@ public class CommonMethods extends PageInitializer {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 		return sdf.format(date.getTime());
+		
 	}
 
 	public static void wait(int second) {
